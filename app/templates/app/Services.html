@@ -1,0 +1,121 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            width: 30%;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center; /* Center align the text */
+        }
+        .service h2 {
+            color: #333;
+        }
+        .service img {
+            width: 100%;
+            height: 300px; /* Ensure the image fits in a square */
+            object-fit: cover;
+            background: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Our Services</h1><div class="services">
+            <div class="service">
+                <h2>Permitting</h2>
+                <img src="/static/app/images/permitting.jpg" alt="Permitting Image">
+                <p>Proficient in managing and executing interior renovation projects. From initial design to final inspection, we ensure that every aspect of your renovation meets local building codes and regulations. We handle all necessary permits, coordinating with municipal authorities to streamline the approval process. Whether it's updating a residential space or transforming a commercial property, our expertise guarantees a seamless renovation experience, prioritizing both safety and aesthetic appeal.</p>
+            </div>
+
+           
+            <div class="service">
+                <h2>Structural Plans</h2>
+                <img src="/static/app/images/st.jpg" alt="Structural Plans Image">
+                <p>The structural design and calculation service is a specialized technical service that focuses on the creation of safe and efficient structural designs for a variety of construction, industrial and infrastructure projects</p>
+            </div>
+
+            <div class="service">
+                <h2> Civil Site Plans</h2>
+                <img src="/static/app/images/civilsite.jpeg" alt="Structural Plans Image">
+                <p>Our civil engineering experts are adept at creating detailed civil and site drainage plans that are crucial for the effective management of water runoff and stormwater systems. We analyze the unique topography and hydrology of your site to design drainage solutions that prevent flooding, soil erosion, and water pollution. With our meticulous approach, you can be confident that your project will maintain both structural integrity and environmental stewardship throughout its lifecycle.</p>
+            </div>
+
+            <div class="service">
+                <h2>Shop Drawings </h2>
+                <img src="/static/app/images/shopdrawings.jpeg" alt="Shop Drawings Image">
+                <p>Our structural engineering team excels in producing precise and detailed structural shop drawings that are essential for the successful execution of construction projects. Our commitment to accuracy and clarity in these drawings minimizes fabrication errors and rework, facilitating a smooth and efficient construction process. Trust our expertise to deliver shop drawings that uphold the highest standards of quality and compliance, contributing to the overall success of your project.</p>
+            </div>
+            
+            <div class="service">
+                <h2>Temporary Construction</h2>
+                <img src="/static/app/images/mot.png" alt="Construction Plans Image">
+                <p>Our team specializes in designing comprehensive temporary traffic and construction plans to ensure the safety and efficiency of your project. We address all aspects of traffic management, from road closures to detour routes, providing detailed strategies tailored to your specific needs. Trust us to navigate the complexities of construction zones, keeping both workers and the public safe.</p>
+            </div>
+
+            <div class="service">
+                <h2>Forensic Inspections</h2>
+                <img src="/static/app/images/roof leaks.jpg" alt="Special Inspections Image">
+                <p>Our forensic and special inspection services are designed to uncover critical details that ensure the safety, compliance, and integrity of your structures. Our specialized team utilizes advanced techniques to conduct thorough investigations, identifying potential issues that may compromise the longevity and performance of your project. We provide detailed analysis and comprehensive reports that offer actionable insights, helping you address and rectify problems effectively. Trust our expertise to deliver high-quality forensic and special inspections that uphold the highest industry standards, safeguarding your investment and upholding public safety.</p>
+            </div>
+
+            <div class="service">
+                <h2>40 Years Recertification</h2>
+                <img src="/static/app/images/image.jpeg" alt="40 Years Recertification Image">
+                <p>Our team offers comprehensive 40-year recertification services essential for ensuring the ongoing safety and compliance of your property. This critical evaluation involves a thorough inspection of both structural and electrical systems to identify any necessary repairs or upgrades. We meticulously assess the integrity of your building, providing detailed reports that outline our findings and recommendations. By adhering to local regulations and industry standards, we help you maintain the longevity and safety of your structure, giving you peace of mind for the next four decades.
+                </p>
+            </div>
+
+            <div class="service">
+                <h2> Reserve Studies</h2>
+                <img src="/static/app/images/condo reserve.jpg" alt="Structural Plans Image">
+                <p>Our civil engineering team is proficient in conducting comprehensive Condominium Reserve Studies, which are essential for the long-term financial planning and maintenance of condominium properties. We meticulously evaluate the condition of common elements and major components within your condominium, such as roofing, HVAC systems, plumbing, electrical infrastructure, and exterior facades. By projecting the future repair and replacement costs, we help you establish a realistic and effective reserve funding plan. Our detailed reports provide valuable insights that assist in informed decision-making, ensuring the sustained integrity, safety, and value of your property.</p>
+            </div>
+
+            <div class="service">
+                <h2>Construction</h2>
+                <img src="/static/app/images/house.png" alt="Structural Plans Image">
+                <p>We offer comprehensive construction services based on our own innovative designs, embodying our commitment to becoming a premier design-build firm. By integrating both design and construction under one roof, we ensure unparalleled coordination, quality, and efficiency. Our meticulous approach guarantees that every project reflects our high standards of safety, aesthetics, and functionality, providing a seamless and exceptional experience from concept to completion.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    {% endblock %}
+</body>
+</html>

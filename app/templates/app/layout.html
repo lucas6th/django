@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}  6th Degree Engineering</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/css/styles.css' %}">
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            padding-top: 80px; /* Adjust this based on your navbar height */
+        }
+        
+    
+        .navbar {
+            position: fixed; /* Makes the navbar fixed at the top */
+            top: 0; /* Aligns it at the very top of the viewport */
+            width: 100%; /* Ensures the navbar spans the full width */
+            background-color: grey; /* Set a background color for visibility */
+            z-index: 1000; /* Ensures the navbar is on top of other elements */
+            display: flex;
+            justify-content: space-between; /* Space between brand and menu */
+            align-items: center; /* Vertically centers content */
+            padding: 10px 20px; /* Adds spacing inside the navbar */
+        }
+    
+        .navbar-header a.navbar-brand {
+            color: white; /* Ensures the brand text is visible */
+            text-decoration: none; /* Removes underline */
+            font-size: 20px; /* Adjust the font size as needed */
+        }
+    
+        .nav-list {
+            list-style: none; /* Removes bullet points */
+            margin: 0; /* Reset margin */
+            padding: 0; /* Reset padding */
+            display: flex; /* Align items horizontally */
+            gap: 20px; /* Space between menu items */
+        }
+    
+        .nav-list li a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Adjust font size */
+            padding: 5px 10px; /* Add some padding for a clickable area */
+        }
+    
+        .nav-list li a:hover {
+            text-decoration: underline; /* Adds underline on hover */
+        }
+        .navbar-logo {
+            width: 30px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+            margin-right: 10px; /* Space between the logo and text */
+        }
+        footer {
+            text-align: center;}
+            
+            .footer-container {
+            background-color: #95AAB6;
+            display: flex;}
+            
+            .footer-container a {
+            color: #F5F6F7;
+            padding: 42px 16px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: medium;}
+            
+            .footer-left {
+            margin-right: auto}
+            
+            .fa:hover {
+            color: #45405F;}
+            
+            .footer-icons {
+            justify-content: space-between;
+            padding: 16px 64px 0px 0px}
+            
+            .footer-icons ul {
+            list-style-type: none;}
+            
+            .footer-icons li {
+            display: inline-block;}
+            
+            .footer-right {
+            margin-left: auto}
+            
+            .copyright 
+            {background-color: #F5F6F7;
+            overflow: hidden;}
+    </style>
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">
+                <img src="{% static 'app/images/logo2.png' %}" alt="Logo" class="navbar-logo">
+                6th Degree Engineering
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'Announcements' %}">Announcements</a></li>
+            <li><a href="{% url 'Services' %}">Services</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'Calendar' %}">Calendar</a></li>
+            <li><a href="{% url 'Sharepoint' %}">SharePoint</a></li>
+            
+            
+        </ul>
+    </div>
+    
+        </div>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color:rgba(9, 16, 5, 0.4)"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4"
+               style="background-color:rgba(0, 0, 0, 0.28)"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/jcasti93sx" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/6thdegreeengineering" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">6th Degree Engineering</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color:rgb(200, 221, 224); height: 2px"
+                  />
+              <p>
+               
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color:rgb(112, 216, 140); height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-white">Your Account</a>  
+              </p>
+              <p>
+                <a href="#!" class="text-white">Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: white; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> Florida</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@6thdegreeengineering.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: white"
+           >
+        © 2024 Copyright    
+        <a class="text-white" href="https://mdbootstrap.com/"
+           ></a
+          >
+      </div>
+      
+    </footer>
+    <!-- Footer -->
+  
+  </div>
+  <!-- End of .container -->
+
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

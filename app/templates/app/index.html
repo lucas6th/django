@@ -1,0 +1,25 @@
+{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/css/styles.css' %}">
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Innovative Solutions</h2>
+        <p>Engineering is about solving problems and creating innovative solutions that improve our world. From designing sustainable buildings to developing cutting-edge technology, engineers play a crucial role in shaping the future.</p>
+        <img src="{% static 'app/images/innovation.jpg' %}" alt="Innovative Solutions" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+        <h2>Advanced Technology</h2>
+        <p>With advancements in technology, engineers are now able to tackle complex challenges with greater efficiency and precision. The integration of AI, robotics, and IoT is revolutionizing the engineering landscape.</p>
+        <img src="{% static 'app/images/technology.jpg' %}" alt="Advanced Technology" class="img-fluid">
+    </div>
+    <div class="col-md-4">
+        <h2>Sustainable Development</h2>
+        <p>Sustainability is at the heart of modern engineering. Engineers are developing eco-friendly solutions that minimize environmental impact and promote a greener future for generations to come.</p>
+        <img src="{% static 'app/images/sustainability.jpg' %}" alt="Sustainable Development" class="img-fluid fit-under-text">
+    </div>
+</div>
+{% endblock %}
